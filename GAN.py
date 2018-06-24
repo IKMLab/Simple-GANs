@@ -154,5 +154,6 @@ with tf.Session() as sess:
 
 				data, bins = np.histogram(generate[0])
 				plt.plot(bins[:-1], data, color = 'r')
-				plt.savefig('result' + step + '.png')
+				plt.savefig('result' + str(step) + '.png')
+				plt.clf()
 				
